@@ -1,0 +1,61 @@
+:root {
+    --primary: #e4b363;
+    --secondary: #ef6461;
+    --tertiary: #fffd8c;
+    --quaternary: #e0dfd5;
+    --quinary: #fcf83b;
+    --light: #e8e9eb;
+    --dark: #313638;
+    --border-radius: 1.5rem;
+    --spacing-one: calc(1rem * 0.25);
+    --spacing-two: calc(1rem * 0.5);
+    --spacing-three: 1rem;
+    --spacing-four: calc(1rem * 1.5);
+    --spacing-five: calc(1rem * 3);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: var(--primary);
+    line-height: 1.5;
+    font-size: 16px;
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin: 5px 0;
+    color: var(--tertiary);
+    line-height: 1.25;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
