@@ -9,6 +9,7 @@ const pizzaController = {
         select: '-__v'
       })
       .select('-__v')
+      // .sort method helps us to return the newest pizza first.  .sort({_id: -1}) sorts in DESC order by the _id value 
       .sort({ _id: -1 })
       .then(dbPizzaData => res.json(dbPizzaData))
       .catch(err => {
@@ -22,6 +23,8 @@ const pizzaController = {
     Pizza.findOne({ _id: params.id })
       .populate({
         path: 'comments',
+
+        // - minus sign in front of the field indicates that we don't want it to be returned.  If we didn't have it, it would mean that it would return only the __v field
         select: '-__v'
       })
       .select('-__v')

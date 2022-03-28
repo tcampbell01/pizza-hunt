@@ -16,6 +16,7 @@ const PizzaSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
+      // the get option means that the value at createdA will be formated by the dateFormat function and used instead of the default timestamp value
       get: createdAtVal => dateFormat(createdAtVal)
     },
     size: {
