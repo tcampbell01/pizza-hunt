@@ -5,7 +5,7 @@ const PizzaSchema = new Schema(
   {
     pizzaName: {
       type: String,
-      required: true,
+      required: 'You need to provide a pizza name!',
       trim: true
     },
     createdBy: {
@@ -22,6 +22,7 @@ const PizzaSchema = new Schema(
     size: {
       type: String,
       required: true,
+      //enum stands for enumerable- refers to a set of data that can e iterated over- much like using the for...in loop to iterate through an object 
       enum: ['Personal', 'Small', 'Medium', 'Large', 'Extra Large'],
       default: 'Large'
     },
